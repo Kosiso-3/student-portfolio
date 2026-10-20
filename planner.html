@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Academic portfolio and student planner of Kolawole DivineFavour Kosiso.">
+<title>Academic Planner | Kolawole DivineFavour Kosiso</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body class="planner">
+<header class="site-header">
+  <a class="brand" href="index.html">Kolawole DivineFavour Kosiso</a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
+  <nav id="mainNav" aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<h1>Academic planner</h1>
+<p class="lead">Add assignments, tick them off, and delete what you no longer need. Your list is saved in this browser.</p>
+<form id="taskForm" class="inline-form" novalidate>
+  <label for="taskInput">New task</label>
+  <input type="text" id="taskInput" placeholder="e.g. Submit CSC 201 report" autocomplete="off">
+  <label for="taskDate">Due date</label>
+  <input type="date" id="taskDate">
+  <button class="btn" type="submit">Add task</button>
+</form>
+<p id="taskError" class="error" role="alert"></p>
+<p id="taskCount" class="count" aria-live="polite"></p>
+<ul id="taskList" class="tasks"></ul>
+</main>
+<footer class="site-footer">
+  <p>&copy; <span id="year">2026</span> Kolawole DivineFavour Kosiso. Software Engineering, MIVA Open University.</p>
+  
+</footer>
+</body>
+</html>
